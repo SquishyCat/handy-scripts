@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]
+	then
+	echo "No arguments supplied"
+else
+	man -t $1 | open -f -a Preview.app
+fi
